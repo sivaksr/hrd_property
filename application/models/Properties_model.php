@@ -130,7 +130,7 @@ class Properties_model extends CI_Model
     $this->db->join('city', 'city.c_id = properties.city', 'left');
     $this->db->join('property', 'property.p_id = properties.type_of_property', 'left');
 	$this->db->where('properties.e_id',$e_id);
-	$this->db->where('properties.p_status',5);
+	$this->db->where('properties.status',1);
 	return $this->db->get()->result_array();
 	}
 

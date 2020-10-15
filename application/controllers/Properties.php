@@ -238,7 +238,7 @@ if($this->session->userdata('user_details'))
 					
 					if($p_id!=''){
 						$stusdetails=array(
-							'p_status'=>5,
+							'status'=>1,
 							'updated_at'=>date('Y-m-d H:i:s')
 							);
 							$statusdata=$this->Properties_model->update_properties($p_id,$stusdetails);
@@ -269,7 +269,7 @@ if($this->session->userdata('user_details'))
 					$status=base64_decode($this->uri->segment(4));
 					if($p_id!=''){
 						$stusdetails=array(
-							'p_status'=>6,
+							'status'=>2,
 							'updated_at'=>date('Y-m-d H:i:s')
 							);
 							$statusdata=$this->Properties_model->update_properties($p_id,$stusdetails);
